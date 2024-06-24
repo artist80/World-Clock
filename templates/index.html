@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="https://compcit.com">Home</a></li>
+                    <li><a href="https://compcit.com/about">About</a></li>
+                    <li><a href="https://compcit.com/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>World Clock</h1>
+        <form method="get" action="/">
+            <label for="country">Select Country:</label>
+            <select name="country" id="country">
+                {% for country in countries %}
+                <option value="{{ country }}">{{ country }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Show Time</button>
+        </form>
+
+        {% if current_time %}
+        <div class="clock-container">
+            <div class="clock" id="clock"></div>
+            <p>Current Time: {{ current_time }}</p>
+        </div>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 World Clock. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
