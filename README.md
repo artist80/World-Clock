@@ -1,4 +1,3 @@
-```
 # World Clock Web Application
 
 This is a simple web application built with Flask that allows users to select a country and view the current time in that country's timezone. The interface includes a dynamic wall clock and displays the time in a textual format. The application also includes a header with a logo and a navigation menu, as well as a footer.
@@ -45,25 +44,6 @@ This is a simple web application built with Flask that allows users to select a 
 
 2. Open your web browser and navigate to `http://127.0.0.1:5000/`.
 
-## Project Structure
-
-```
-world-clock/
-│
-├── static/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── script.js
-│   └── logo.png
-│
-├── templates/
-│   └── index.html
-│
-├── app.py
-├── requirements.txt
-└── README.md
-```
 
 ## License
 
@@ -85,8 +65,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out at [your-email@example.com].
+If you have any questions or suggestions, feel free to reach out at contact@compcit.com.
 
-```
-
-Feel free to customize the content based on your specific requirements and project details.
